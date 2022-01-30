@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 60px;
+  background-color: rgb(81, 81, 192);
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
+.header-col{
+  display: flex;
+  justify-content: space-between;
+}
+.header-col p{
+  margin-right: 10px;
+}
+.search{
+  display: flex;
+  position: relative;
+  border: 1px solid transparent ;
+  border-radius: 5px;
+  height: 30px;
+  padding: 10px;
+  align-items: center;
+  margin-top: 10px;
+  background-color: rgb(102, 102, 211);
+}
+.search-icon{
+     margin-top: 5px;
+     font-size: 5px;
+}
+input{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+input[type='text']{
+  color: white;
+}
+.map{
+  width: 100%;
+  height: 85vh;
+}
+.list{
+  height: 75vh;
+  overflow: auto;
+}
+.container{
+     padding: 25px;
+}
+.loading{
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  margin:5px;
+  margin-bottom: 30px;
+  min-width: 120;
+}
+.chip{
+    margin: 5px 5px 5px 0px;
 
-.App-link {
-  color: #61dafb;
+}
+.subtitle{
+     display: flex;
+     margin-top: 10px;
+     align-items: center;
+     justify-content: space-between;
+}
+.spacing{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.space{
+  margin-bottom: 10px !important
+}
+.font{
+  font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.paper{
+  padding: 10px;
+   display: flex; 
+   flex-direction: column; 
+   justify-content: center;
+   width: 100px
+}
+
+.markerContainer {
+  position: absolute;
+   transform: translate(-50%, -50%);
+   z-index: 1, 
+}
+.markerContainer:hover{
+  z-index: 2;
+}
+.pointer {
+  cursor: pointer,
+}
+.weather-image{
+  height: 500px;
+  color: red;
 }
