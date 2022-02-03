@@ -46,13 +46,7 @@ export default function Map({ setCoordinates, setBounds, coordinates, places, se
                     </div>
                )
                )}
-               {
-                    weatherData?.list?.map((data, i) => (
-                         <div key={i} lat={data.coord.lat} lng={data.coord.lon}>
-                              <img  className='weather-image' src={`https://openweathermap.org/img/w/${data.weather[0].icon}.png`}/>
-                         </div>
-                    ))
-               }
+               
 
           </GoogleMapReact>
      </div>;

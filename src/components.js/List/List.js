@@ -5,10 +5,11 @@ export default function List({ places, childClicked, isLoading, item, setItem, r
 
   const [elref, setElref] = useState([])
 
+   /* eslint-disable */ 
   useEffect(() => {
     const refs = Array(places?.length).fill().map((_, i) => elref[i] || createRef())
     setElref(refs)
-  }, [places, elref])
+  }, [places])
 
   return <div className='container'>
     <Typography variant='h6'>Restaurants,Hotel and Attractions around you</Typography>
